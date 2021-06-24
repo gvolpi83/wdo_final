@@ -1,0 +1,92 @@
+#carouselHero .carousel-item img {
+  object-fit: cover;
+  object-position: center;
+  height: 85vh;
+  overflow: hidden; }
+
+/* Clases y ID */
+.italic {
+  display: inline-block;
+  text-align: center;
+  font-style: italic;
+  font-size: 0.8rem;
+  color: #cfcfd4;
+  padding: 10px; }
+
+.parrafo {
+  display: inline-block;
+  text-align: center; }
+
+.centro {
+  text-align: center;
+  margin: 20px;
+  /* Titulos textos */ }
+  .centro h1 {
+    font-family: 'Roboto Condensed', sans-serif;
+    color: #d4dee2;
+    font-size: 2rem; }
+  .centro h2 {
+    font-size: 1.8rem;
+    font-family: 'Roboto Condensed', sans-serif;
+    color: #d4dee2; }
+  .centro h3 {
+    font-family: 'Roboto Condensed', sans-serif;
+    font-weight: 200;
+    font-size: 1.2rem;
+    color: #d4dee2; }
+  .centro h6 {
+    margin: 0 0 5px 0; }
+  .centro .textos {
+    font-weight: bold; }
+  .centro .textos--destacados {
+    font-size: large; }
+  .centro .textos__fondos {
+    color: #ffffff; }
+
+/* Galeria home */
+.vistaPrevia {
+  display: flex;
+  flex-flow: column nowrap; }
+
+.vistaPrevia__gallery {
+  margin: 20px;
+  border: 1px solid #242020; }
+  .vistaPrevia__gallery .vistaPrevia__img {
+    width: 100%;
+    height: auto; }
+  .vistaPrevia__gallery .vistaPrevia__desc {
+    padding: 15px;
+    text-align: center;
+    font-family: 'Nunito Sans', sans-serif; }
+
+.vistaPrevia__gallery:hover {
+  border: 1px solid #777;
+  transition: 2s;
+  transform: scale(1.1, 1.1); }
+
+.boton {
+  background-color: blue;
+  color: white;
+  display: inline-block;
+  text-decoration: none;
+  font-size: large; }
+
+.boton--rojo {
+  background-color: #ff0077;
+  color: white;
+  display: inline-block;
+  text-decoration: none;
+  font-size: larger; }
+
+/* Responsive Mobile First  */
+@media only screen and (min-width: 1024px) {
+  .vistaPrevia {
+    display: flex;
+    flex-flow: row nowrap;
+    align-items: center;
+    justify-content: space-evenly; } }
+
+@media only screen and (max-width: 380px) {
+  nav div a img {
+    width: 200px;
+    height: auto; } }
