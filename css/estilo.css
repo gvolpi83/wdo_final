@@ -60,6 +60,19 @@
 .body_barra {
   padding-top: 120px; }
 
+/* Grid Galeria de Fotografia */
+.fotosGal:hover {
+  transition: 1s;
+  transform: scale(1.2, 1.2); }
+
+.fotosGal {
+  width: 100%;
+  object-fit: cover;
+  display: block; }
+
+.row > div {
+  padding: 1px; }
+
 /* Responsive Mobile First  */
 @media only screen and (min-width: 992px) {
   .vistaPrevia {
@@ -72,11 +85,16 @@
   #carouselHero .carousel-item img {
     height: 65vh; }
   .text_responsive {
-    text-align: center; } }
+    text-align: center; }
+  .fotosGal {
+    align-items: center;
+    height: auto !important; } }
 
 @media only screen and (max-width: 576px) {
   nav div a img {
     width: 200px;
     height: auto; }
   #carouselHero .carousel-item img {
-    height: 40vh; } }
+    height: 40vh; }
+  .row > div {
+    padding: 2px; } }
