@@ -1,11 +1,23 @@
+@import url("https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Dela+Gothic+One&display=swap");
 :root {
   --ease: all 0.3s ease  0s;
   --overlay: rgba(23,25,29,0.8); }
 
+body {
+  font-family: 'Montserrat', sans-serif;
+  background-image: url(../img/pexels-photo-2680270.jpeg);
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover; }
+
+h1, h2, h3, h4, h5, h6 {
+  font-family: 'Dela Gothic One', cursive; }
+
 #carouselHero .carousel-item img {
   object-fit: cover;
   object-position: center;
-  height: 75vh;
+  height: 80vh;
   overflow: hidden; }
 
 /* Clases y ID */
@@ -26,15 +38,12 @@
   margin: 20px;
   /* Titulos textos */ }
   .centro h1 {
-    font-family: 'Roboto Condensed', sans-serif;
     color: #d4dee2;
     font-size: 2rem; }
   .centro h2 {
     font-size: 1.8rem;
-    font-family: 'Roboto Condensed', sans-serif;
     color: #d4dee2; }
   .centro h3 {
-    font-family: 'Roboto Condensed', sans-serif;
     font-weight: 200;
     font-size: 1.2rem;
     color: #d4dee2; }
@@ -44,8 +53,6 @@
     font-weight: bold; }
   .centro .textos--destacados {
     font-size: large; }
-  .centro .textos__fondos {
-    color: #ffffff; }
 
 a {
   color: #f4f4f4;
@@ -62,6 +69,9 @@ a {
     width: 100%;
     height: auto; }
 
+.vistaPrevia__gallery:hover {
+  transform: scale(1.02); }
+
 .bg-barra {
   background-color: #2c3035a9 !important; }
 
@@ -72,9 +82,10 @@ a {
 .fotosGal {
   width: 100%;
   object-fit: cover;
-  display: block; }
+  display: block;
+  padding: 1px; }
 
-.row > div {
+.bordes {
   padding: 1px; }
 
 /* Texto imagenes */
@@ -90,8 +101,10 @@ a {
   color: #fff;
   visibility: hidden;
   opacity: 0;
-  /* transition effect. not necessary */
   transition: opacity .6s, visibility .1s; }
+
+.img__description {
+  left: 2%; }
 
 .img__wrap:hover .img__description {
   visibility: visible;
@@ -111,11 +124,11 @@ button:hover {
 
 .top_section {
   grid-area: top_section;
-  min-height: 370px;
+  min-height: 500px;
   display: grid;
   grid-template-columns: 10% 1fr 10%;
   grid-template-areas: ". head .";
-  background: linear-gradient(var(--overlay), var(--overlay)), url(../img/clip.jpg);
+  background: linear-gradient(var(--overlay), var(--overlay)), url(https://www.cicnews.com/wp-content/uploads/2020/07/20200713film-1.jpg);
   background-size: cover;
   background-position: center;
   background-repeat: no-repeat; }
@@ -142,11 +155,14 @@ button:hover {
   grid-area: content_section;
   display: grid;
   grid-template-columns: 1fr;
-  grid-template-areas: "playlist_uno" "playlist_dos";
+  grid-template-areas: "playlist_uno infovideo" "playlist_dos";
   margin-bottom: 60px; }
 
 .playlist_uno {
   grid-area: playlist_uno; }
+
+.info_video {
+  grid-area: infovideo; }
 
 .playlist_dos {
   grid-area: playlist_dos; }
@@ -203,38 +219,7 @@ button:hover {
 .video i:hover {
   opacity: 1; }
 
-.form-control {
-  border: none;
-  border: 1px solid #ccc;
-  border-radius: 4px; }
-
-.form-control:active, .form-control:focus {
-  outline: none;
-  -webkit-box-shadow: none;
-  box-shadow: none;
-  border-color: #000; }
-
-.col-form-label {
-  color: #000; }
-
-.btn, .form-control, .custom-select {
-  height: 50px; }
-
-.custom-select:active, .custom-select:focus {
-  outline: none;
-  -webkit-box-shadow: none;
-  box-shadow: none;
-  border-color: #000; }
-
-.box {
-  padding: 40px;
-  background: #fff;
-  -webkit-box-shadow: -30px 30px 0px 0 rgba(0, 0, 0, 0.08);
-  box-shadow: -30px 30px 0px 0 rgba(0, 0, 0, 0.08); }
-
-textarea.form-control {
-  height: auto; }
-
+/* About  */
 /* Responsive Mobile First  */
 @media only screen and (min-width: 992px) {
   .vistaPrevia {
@@ -263,7 +248,7 @@ textarea.form-control {
 @media only screen and (max-width: 576px) {
   #carouselHero .carousel-item img {
     height: 40vh; }
-  .row > div {
+  .bordes {
     padding: 2px; }
   .video_des {
     width: auto; } }

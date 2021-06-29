@@ -2957,13 +2957,12 @@ textarea.form-control-lg {
 
 .btn-secondary {
   color: #fff;
-  background-color: #6c757d;
-  border-color: #6c757d;
+  background-color: #6347B8;
+  border-width: medium;
+  border-color: #6BC742;
 }
 .btn-secondary:hover {
-  color: #fff;
-  background-color: #5c636a;
-  border-color: #565e64;
+  transform: scale(1.03);
 }
 .btn-check:focus + .btn-secondary, .btn-secondary:focus {
   color: #fff;
@@ -3017,13 +3016,13 @@ textarea.form-control-lg {
 
 .btn-info {
   color: #000;
-  background-color: #0dcaf0;
-  border-color: #0dcaf0;
+  background-color: #6BC742;
+  border-color: #6BC742;
 }
 .btn-info:hover {
   color: #000;
-  background-color: #31d2f2;
-  border-color: #25cff2;
+  background-color: #84d163;
+  border-color: #82c267;
 }
 .btn-check:focus + .btn-info, .btn-info:focus {
   color: #000;
@@ -3216,13 +3215,14 @@ textarea.form-control-lg {
 }
 
 .btn-outline-success {
-  color: #198754;
-  border-color: #198754;
+  color: #6BC742;
+  border-color: #6BC742;
+  color: #fff;
 }
 .btn-outline-success:hover {
   color: #fff;
-  background-color: #198754;
-  border-color: #198754;
+  background-color: #6BC742;
+  border-color: #6BC742;
 }
 .btn-check:focus + .btn-outline-success, .btn-outline-success:focus {
   box-shadow: 0 0 0 0.25rem rgba(25, 135, 84, 0.5);
@@ -4401,7 +4401,7 @@ textarea.form-control-lg {
   font-size: 1.3rem;
   color: #ffffff;
   text-align: left;
-  background-color: rgb(59, 53, 53);
+  background-color: #6347B8;
   border: 0;
   border-radius: 0;
   overflow-anchor: none;
@@ -4413,8 +4413,8 @@ textarea.form-control-lg {
   }
 }
 .accordion-button:not(.collapsed) {
-  color: #caeb53;
-  background-color: #232527;
+  color: #6BC742;
+  background-color: #6347B8;
   box-shadow: inset 0 -1px 0 rgba(0, 0, 0, 0.125);
 }
 .accordion-button:not(.collapsed)::after {
@@ -4452,7 +4452,7 @@ textarea.form-control-lg {
 }
 
 .accordion-item {
-  background-color: #fff;
+  
   border: 1px solid rgba(0, 0, 0, 0.125);
 }
 .accordion-item:first-of-type {
@@ -5906,8 +5906,9 @@ textarea.form-control-lg {
   padding-top: 1.25rem;
   padding-bottom: 1.25rem;
   color: #fff;
-  text-align: center;
+  
 }
+
 
 .carousel-dark .carousel-control-prev-icon,
 .carousel-dark .carousel-control-next-icon {
@@ -7334,7 +7335,7 @@ textarea.form-control-lg {
 }
 
 .text-warning {
-  color: #ffc107 !important;
+  color: #6BC742 !important;
 }
 
 .text-danger {
@@ -7350,7 +7351,7 @@ textarea.form-control-lg {
 }
 
 .text-white {
-  color: #fff !important;
+  color: rgb(241, 226, 226) !important;
 }
 
 .text-body {

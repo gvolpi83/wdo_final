@@ -4,21 +4,26 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="../css/normalize.css">
     <link rel="stylesheet" href="../css/bootstrap.css">
     <link rel="stylesheet" href="../css/estilo.css">
     <link rel="stylesheet" type="text/css" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.14.0/css/all.min.css">
-    <title>Document</title>
+    <meta name="description" content="Servicios de fotografía en vivo. Cubrimos todo tipos de eventos culturales y privados. Desde grandes festivales a pequeños eventos corporativos nos ocupamos de documentarlos todos">
+    <meta name="keywords"  content="weedo, media, photography, concert, multimedia, corporate, live music, photoshoot, product photography,">
+    <link rel="shortcut icon" type="image/jpg" href="../img/favicon/favicon-32x32.png"/>
+    <title>Weedo Live Photography</title>
 </head>
 
-<body class="body_barra" style="background-color: cadetblue;">
+<body class="body_barra">
     
   <!-- Barra de contenidos -->
-    <header></header>
+  
+    <header>
     <nav class="navbar fixed-top navbar-expand-lg navbar-dark bg-barra">
       
-        <div class="container-fluid">
+        <div class="container">
         <a class="navbar-brand" href="#">
-            <img src="../img/WDO logo texto-02.png" alt="" width="220" height="70">
+            <img src="../img/Logos/WDO texto-02.png" alt="" width="220" height="70">
           </a>
           <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
             <span class="navbar-toggler-icon"></span>
@@ -26,27 +31,26 @@
           <div class="collapse navbar-collapse" id="navbarSupportedContent">
         <ul class="navbar-nav m-auto mb-2 mb-lg-0">
           <li class="nav-item">
-            <a class="nav-link " aria-current="page" href="#">Home</a>
-          </li>
-         
+            <a class="nav-link " aria-current="page" href="../index.html">Home</a>
+          </li>         
           <li class="nav-item dropdown">
-            <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+            <a class="nav-link dropdown-toggle active" href="#" id="navbarDropdown" role="button" data-bs-toggle="dropdown" aria-expanded="false">
               Producciones
             </a>
             <ul class="dropdown-menu " aria-labelledby="navbarDropdown">
-              <li><a class="dropdown-item" href="#">Video</a></li>
-              <li><a class="dropdown-item" href="#">Fotografía</a></li>
+              <li><a class="dropdown-item" href="video.html">Video</a></li>
+              <li><a class="dropdown-item" href="fotografia.html">Fotografía</a></li>
             </ul>
           </li>
           <li class="nav-item">
-            <a class="nav-link active" href="#">Servicios</a>
+            <a class="nav-link " href="servicios.html">Servicios</a>
           </li>
           <li class="nav-item">
-            <a class="nav-link" href="#">Nosotros</a>
+            <a class="nav-link" href="nosotros.html">Nosotros</a>
           </li>
         </ul>
 
-        <button class="btn btn-secondary text-white" type="button">Presupuestos</button>
+        <a  href="presupuesto.html" class="btn btn-secondary text-white" type="button">Presupuestos</a>
       
 
       </div>
@@ -54,44 +58,57 @@
   </nav>
 </header>
 
-<!-- Galeria de fotos -->
+<!-- Intro Fotos -->
 
-<section class="container">
+<section class="container text-white mb-5">
 
-  <h1 class="centro">Weedo Live Photography</h1>
-
+  <h1 class="centro display-3 "><u>Weedo Live Photography</u></h1>
+  <ul class="list-inline text-center">
+    <li class="list-inline-item h3">Recitales</li>
+    <li class="list-inline-item h3">Eventos</li>
+    <li class="list-inline-item h3">Productos</li>
+  </ul>
   <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Molestias ut deserunt voluptatum. Quaerat id neque, quas atque reiciendis repudiandae illo, enim eligendi doloremque, doloribus molestiae sint est saepe! Cupiditate, veniam? Lorem ipsum dolor sit amet consectetur adipisicing elit. Assumenda incidunt neque dignissimos optio tenetur sit expedita quasi, saepe ea doloremque maxime exercitationem, nostrum deleniti ipsa dolorum, rerum eos veniam praesentium. Lorem ipsum dolor, sit amet consectetur adipisicing elit. Doloremque magnam architecto corporis provident, quibusdam aperiam maiores alias culpa molestias placeat minus qui necessitatibus iure itaque perferendis nisi in porro ullam.</p>
-
+ 
 </section>
 
+<!-- Galeria de fotos -->
 
 </section>
 
 <section class="container">
   <div class= "row justify-content-center">
-    <div class="col-md-8 img__wrap">
-      <img src="../img/gal 6.jpg" alt="duke" class="fotosGal rounded img__img" height="100%">
-      <p class="img__description">ERUCA SATIVA - Luna Park - 2014.</p>
+    <div class="col-md-8 img__wrap bordes">
+      <img src="../img/fotografia/gal 6.jpg" alt="duke" class="fotosGal rounded img__img" height="100%">
+      <p class="img__description">ERUCA SATIVA - Luna Park - 2014.
+      <a href="#" class="btn btn-outline-success">Ver evento</a></p>
     </div>
     
-    <div class="col-md-4 img__wrap ">
-      <img src="../img/Gal 3s.jpg" alt="duke" class="fotosGal rounded " height="auto" title="hover text" >
-      <p class="img__description">CORRISION OF CONFORMITY - Roxy - 2011.</p>
+    <div class="col-md-4 img__wrap bordes ">
+      <img src="../img/fotografia/Gal 3s.jpg" alt="duke" class="fotosGal rounded " height="auto" title="hover text" >
+      <p class="img__description">CORRISION OF CONFORMITY - Roxy - 2011.
+      <a href="#" class="btn btn-outline-success">Ver evento</a></p>
     </div> 
-    <div class= "row justify-content-center mb-5">      
-    <div class="col-md-3 img__wrap">
-      <img src="../img/gal 7.jpg" alt="duke" class="fotosGal rounded" height="100%" >  
-      <p class="img__description">GOGOL BORDELLO - Groove - 2012.</p>
+    <div class= "row justify-content-center mb-5 ">      
+    <div class="col-md-3 img__wrap bordes">
+      <img src="../img/fotografia/gal 7.jpg" alt="duke" class="fotosGal rounded" height="100%" >  
+      <p class="img__description">GOGOL BORDELLO - Groove - 2012.
+        <a href="#" class="btn btn-outline-success">Ver evento</a>
+      </p>
           </div>
-      <div class="col-md-6 img__wrap">
-      <img src="../img/gal 1.jpg" alt="duke" class="fotosGal rounded">
-      <p class="img__description">Duke Ellington Tribute- C.C. Borges - 2018.</p>
+      <div class="col-md-6 img__wrap bordes">
+      <img src="../img/fotografia/gal 1.jpg" alt="duke" class="fotosGal rounded">
+      <p class="img__description">Duke Ellington Tribute- C.C. Borges - 2018.
+        <a href="#" class="btn btn-outline-success">Ver evento</a>
+      </p>
     </div>
-    <div class="col-md-3 img__wrap">
+    <div class="col-md-3 img__wrap bordes">
     
       
-        <img src="../img/gal 8.jpg" alt="duke" class="fotosGal rounded" height="100%">
-        <p class="img__description">Hablan por la Espalda - C.C. Recoleta - 2014.</p>
+        <img src="../img/fotografia/gal 8.jpg" alt="duke" class="fotosGal rounded" height="100%">
+        <p class="img__description">Hablan por la Espalda - C.C. Recoleta - 2014.
+          <a href="#" class="btn btn-outline-success">Ver evento</a>
+        </p>
       </div>
       
     </div>
@@ -99,17 +116,18 @@
   </div>       
 
 </section>
+
 <!-- Footer -->
 
 <footer class="bg-dark text-white pt-5 pb-4">
 
-  <div class="container text-md-left">
+  <div class="container-fluid text-md-left">
 
     <div class="row text-md-left">
 
         <div class="col-md3 col-lg-3 col-xl-3 mx-auto  text-center">
             <a href="#">
-              <img src="../img/logo-02.png" alt="Logo WDO" class="img-logo mr-2" width="120px" height="auto">
+              <img src="../img/Logos/logo-02.png" alt="Logo WDO" class="img-logo mr-2" width="120px" height="auto">
             </a>
             <h6>
               Lorem ipsum dolor sit. 
@@ -120,13 +138,13 @@
 
           <h5 class="text-uppercase mb-2 font-weight-bold text-warning">Producciones</h5>
           <p class="my-1">
-            <a href="#" class="text-white" style="text-decoration: none;"> Fotografia</a>
+            <a href="fotografia.html" class="text-white" style="text-decoration: none;"> Fotografía</a>
           </p>
           <p class="my-1">
-            <a href="#" class="text-white" style="text-decoration: none;"> Videos</a>
+            <a href="video.html" class="text-white" style="text-decoration: none;"> Videos</a>
           </p>
           <p class="my-1">
-            <a href="#" class="text-white" style="text-decoration: none;"> Servicios</a>
+            <a href="servicios.html" class="text-white" style="text-decoration: none;"> Servicios</a>
           </p>
           
 
@@ -155,7 +173,7 @@
          
           </ul>
           <li class="list-inline-item"></li>
-            <a href="#" type="button" class="btn btn-info text-white ">Escribinos</a>
+            <a href="contacto.html" type="button" class="btn btn-info text-white ">Escribinos</a>
           </li>
         </div>
 
